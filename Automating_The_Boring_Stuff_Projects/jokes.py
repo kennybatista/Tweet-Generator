@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+# jokes.py - curated jokes to send to your friends
+
+jokes = ["A friend gives hope when life is low, a friend is a place when you have nowhere to go, a friend is honest, a friend is true. A friend is precious a friend is u.","A special friend is rare indeed, it beems to be special breed, yes, perfect friends r very few, so lucky I m for having you.","Feel good when somebody Miss u. Feel better when somebody Loves u. But feel best when somebody never forgets u.","If I m in hell & u in heaven, I always look up & be proud of u. but if I were In heaven & u in hell, I beg God 2 send me down coz heaven wont be heaven without u.","If kisses were water, I will give u sea. If hugs were leaves, I will give u a tree.If u luv a planet, I will give u a galaxy, if friendship is life I will give u mine.","It takes half our life to find true friends & half of it keeping them.I am lucky to have spent less than half my life finding you & wish to spend the rest keeping you.","People live People die People Laugh People Cry Some give up Some will try Some say hi Some say bye Others may forget YOU but never will I.","They say it takes a minute 2 fine a special person, an hour 2 appreciate them, a day 2 love them, but then an entire life 2 forget them.","	6 rules to be HAPPY: Free your heart from hatred; Free your mind from worries; Live simply; Expect less; Give more & Always have ME as UR FRIEND","A day is going to end again. It is nice to have a friend like U making my everyday seems so great. Thank U my good friend lastly gd nite n sweet dreams...","A faithful friend is worth more than all the gold in the world.","	A friend gives hope wen life is low.A friend is a place where you can go.A friend is honest- A friend is true.A friend is precious.A friend is u!","A friend is always welcome ... Early in the morning or late at night. Time is of no importance ... When it concerns real friendship!!","A friend is never a coincidence in your life, they are meant to enter your life to bring you joy and laughter. So, i will treasure the friendship between us.","A friend is never a coincidence in your life, they are meant to enter your life to bring you joy and laughter. So, i will treasure the friendship between us.","A friend is one who knows us, but loves us anyway"]
+
+import pyperclip,random
+
+for joke in range(0,1):
+    randomInteger = random.randint(0, len(jokes)-1)
+    print(jokes[randomInteger])
+    pyperclip.copy(jokes[randomInteger])
+    print("copied to clipboard")
