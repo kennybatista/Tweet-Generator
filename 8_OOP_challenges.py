@@ -1,46 +1,88 @@
-# This code tests the Animal, Tiger, Bear, Unicorn, Giraffe and Bee classes
-# and then tests the Zookeeper class and its feedAnimals method
-def test():
-    def getline():
-        # Read a line from standard input and strip surrounding whitespace
-        return sys.stdin.readline().strip()
-    # Get the number of animals
-    animalCount = int(getline())
-    animals = []
-    # Iterate through the input for each animal
-    for count in range(animalCount):
-        # Get the animal's species and name
-        species = getline()
-        name = getline()
-        animal = None
-        # Check what species the animal is
-        if species == "tiger":
-            # Create a Tiger object
-            animal = Tiger(name)
-        elif species == "bear":
-            # Create a Bear object
-            animal = Bear(name)
-        elif species == "unicorn":
-            # Create a Unicorn object
-            animal = Unicorn(name)
-        elif species == "giraffe":
-            # Create a Giraffe object
-            animal = Giraffe(name)
-        elif species == "bee":
-            # Create a Bee object
-            animal = Bee(name)
+# Copy your Animal class here
+class Animal(object):
+    def __init__(self, name):
+        self.name = name
+
+    def sleep(self):
+        print(self.name + " sleeps for 8 hours")
+
+    def eat(self, food):
+        print(self.name + " eats " + food)
+        if food == self.favoriteFood:
+             print("YUM! " + self.name + " wants more " + self.favoriteFood)
+
+
+# Copy your Tiger class here
+class Tiger(Animal):
+    def __init__(self, name):
+        self.favoriteFood = "meat"
+        self.name = name
+
+
+# Copy your Bear class here
+class Bear(Animal):
+    def __init__(self, name):
+        self.name = name
+        self.favoriteFood = "fish"
+
+    def sleep(self):
+        print(self.name + " hibernates for 4 months")
+
+
+# Implement the Unicorn class here as a subclass of Animal
+# Hint: Implement the initializer method and override the sleep method
+class Unicorn(Animal):
+    def __init__(self, name):
+        self.name = name
+        self.favoriteFood = "marshmallows"
+
+    def sleep(self):
+        print(self.name + " sleeps in a cloud")
+
+
+# Implement the Giraffe class here as a subclass of Animal
+# Hint: Implement the initializer method and override the eat method
+class Giraffe(Animal):
+    def __init__(self, name):
+        self.name = name
+        self.favoriteFood = "leaves"
+
+    def eat(self, food):
+        print(self.name + " eats " + food)
+        if food == self.favoriteFood:
+            print("YUM! " + self.name + " wants more " + self.favoriteFood)
         else:
-            # Create an Animal object
-            animal = Animal(name, "kibble")
-        # Add the animal to the list of animals
-        animals.append(animal)
-    # Get the zookeeper's name and food to feed the animals
-    name = getline()
-    food = getline()
-    # Create a Zookeeper object and test its feedAnimals method
-    zookeeper = Zookeeper(name)
-    zookeeper.feedAnimals(animals, food)
+            print("YUCK! " + self.name + " spits out " + food)
 
 
-if __name__ == "__main__":
-    test()
+# Implement the Bee class here as a subclass of Animal
+# Hint: Implement the initializer method and override the sleep and eat methods
+class Bee(Animal):
+    def __init__(self, name):
+        self.name = name
+        self.favoriteFood = "pollen"
+
+    def eat(self, food):
+        print(self.name + " eats " + food)
+        if self.favoriteFood == food:
+            print("YUM! " + self.name + " wants more " + self.favoriteFood)
+        else:
+            print("YUCK! " + self.name + " spits out " + food)
+
+    def sleep(self):
+        print(self.name + " never sleeps")
+
+
+# Implement the Zookeeper class here
+class Zookeeper(object):
+    # Implement the initializer method here
+    def __init__(self, name):
+        self.name = name
+
+    # Implement the feedAnimals method here
+    def feedAnimals(self, animals, food):
+        number = len(animals)
+        print(self.name + " is feeding " + food + " to " + str(number) + " animals")
+        for currentAnimal in animals:
+            currentAnimal.eat(food)
+            currentAnimal.sleep()
