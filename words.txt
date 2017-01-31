@@ -1,0 +1,28 @@
+The foundation of our blog has always been sharing the lessons we’ve learned building Intercom.
+
+When we kickstarted our podcast in Summer 2015, the job was to supplement this with a set of new, mostly outside voices – many of who taught us a thing or two on our own product-building journey – and create a long-form platform to share their equally valuable lessons. Intercom, after all, is about conversations.
+
+The program started as an experiment with a Macbook Air, clunky USB mic, fluorescently lit, claustrophobic call room and a curiosity as to whether readers would actually become listeners. Fast forward 18 months, and we’ve two in-house studios (Dublin and San Francisco), a weekly publishing cadence, and more than 26 hours of content from leading thinkers in the areas of product management, design, marketing, support and the business of startups.
+
+Together these conversations tell the full story of a product lifecycle. So to mark our 50th episode, we pulled a collection of our favorite lessons and insights to illustrate that.
+
+
+
+Bob Moesta: There’s actually no new consumption. They’re already getting the job done one way or another through a different category. We help people find the analogous categories, products, or situations where people are trying to make progress, but they can’t. That’s where your technology would fit into it.
+
+Part of that is figuring out what other industries to look at. We did some work for somebody who was doing a home health care product that doesn’t exist. At the end it was like, “Why did somebody buy First Alert? Why did somebody rent a home health care person to come in and see their parents?”
+
+There’s actually no new consumption.
+
+If we understood those contexts, because they’re trying to fit into those kinds of situations, the context wrapped around that progress is literally the same. We can then say, “Based on our technology now, what are the trade offs we’re willing to make?”
+
+Des: When you say there’s no new consumption, how does that gel with the idea of something like Snapchat? Are you implying people always switch from something?
+
+Bob: They always switch from something. If I mapped the day of a kid five years ago before Snapchat, it was either Facebook or Twitter. They were doing something else.
+
+The reality is that there’s no more time in the world. You can’t create time, and so now they’re choosing to do Snapchat and not do something else. That’s what you have to be able to understand. The part of Jobs is to understand what they are firing. What did they stop doing? Did they want to stop doing it, or do they miss it?
+
+Des: When you hear about emerging industries, a popular one at the moment in the Valley is this idea of customer success. Are people also switching to customer success from something else they thought did the same job?
+
+Bob: They’re switching platforms. There’s a great book called How To Fly A Horse, and it talks about the evolution of innovation, and that innovation is really about creation and creating things. It’s the hard work and the fact that all things are really just evolutions of another. Though the business might call it a new category and the industry might call it a new category because of investment, most categories are created because the returns are different and the investment criteria are different. The reality from the consumer’s side is it doesn’t work that way.
+
