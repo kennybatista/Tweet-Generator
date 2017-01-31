@@ -44,7 +44,7 @@ class Animal(object):
         self.name = name
 
     def sleep(self):
-        print(self.name + " hibernates for 4 months")
+        print(self.name + " sleeps for 8 hours")
 
     def eat(self, food):
         print(self.name + " eats " + food)
